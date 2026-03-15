@@ -1,0 +1,11 @@
+/* app global css */
+html {
+    background-color: rgb(50, 50, 50);
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    color: rgb(240, 240, 240);
+    font-size: 1.1em;
+}
