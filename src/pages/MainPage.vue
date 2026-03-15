@@ -679,6 +679,7 @@ function AddRoleToPending()
       ModifyAccess: false,
       ModifyChannels: false,
       BanUsers: false,
+      DeleteUsers: false,
     }
   }
 
@@ -1187,7 +1188,7 @@ addEventListener("beforeunload", async () => {
         <div class="DataInput">
           <div class="AddNewRole">
             <input type="text" class="TextInput" v-model="PendingConfigureRoles.NewName" @keyup.enter.stop.prevent="AddRoleToPending" placeholder="Add new role..." />
-            <q-btn><q-icon name="add" @click="AddRoleToPending" /></q-btn>
+            <q-btn @click="AddRoleToPending" ><q-icon name="add" /></q-btn>
           </div>
 
           <table>
